@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (viewChanged)="currentView = $event"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-recipe></app-recipe>
-      <app-shopping-list></app-shopping-list>
+      <app-recipe *ngIf="currentView == 'r'"></app-recipe>
+      <app-shopping-list *ngIf="currentView == 's'"></app-shopping-list>
     </div>
   </div>
 </div>
