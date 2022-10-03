@@ -21,14 +21,11 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
+  imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [RecipeItemComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
