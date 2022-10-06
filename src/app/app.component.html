@@ -2,8 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-recipe *ngIf="currentView == 'r'"></app-recipe>
-      <app-shopping-list *ngIf="currentView == 's'"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

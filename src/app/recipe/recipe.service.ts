@@ -30,4 +30,8 @@ export class RecipeService {
   addToShoppingList(ingredients: Ingredient[]) {
     this.slService.addRecipeIngredients(ingredients);
   }
+
+  getSingleRecipe(index: number) {
+    return this.recipes[index];
+  }
 }
